@@ -19,9 +19,9 @@ function Header() {
       <nav className={menuOpen ? 'nav-menu nav-open' : 'nav-menu'} aria-label="Navegação principal">
         <NavLink to="/" end className={linkClass} onClick={closeMenu}>Início</NavLink>
         <NavLink to="/servicos" className={linkClass} onClick={closeMenu}>Serviços</NavLink>
-        <a href="/#sobre" onClick={closeMenu}>Sobre</a>
-        <a href="/#galeria" onClick={closeMenu}>Galeria</a>
-        <a href="/#contato" onClick={closeMenu}>Contato</a>
+        <Link to="/#sobre" onClick={closeMenu}>Sobre</Link>
+        <Link to="/#galeria" onClick={closeMenu}>Galeria</Link>
+        <Link to="/#contato" onClick={closeMenu}>Contato</Link>
       </nav>
 
       <Link className="button button-dark header-action" to="/agendamento">Agendar</Link>
